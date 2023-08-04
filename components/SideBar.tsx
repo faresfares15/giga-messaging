@@ -18,7 +18,7 @@ export default function SideBar() {
     "assets/icons/settings.svg",
   );
   return (
-    <nav className="flex flex-col items-center h-screen shadow-lg shadow-blue-100 pb-6 pt-4 pr-4 pl-4">
+    <nav className="flex flex-col items-center h-screen shadow-lg shadow-purple-100 pb-6 pt-4 pr-4 pl-4">
       {/*Links*/}
       <div className="flex flex-col items-center gap-12">
         <Link href="/home">
