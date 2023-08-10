@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import SearchMessages from "./SearchMessages";
+import SearchMessages from "./Chat/SearchMessages";
 import MessagesList from "@/components/MessagesList";
 import { motion } from "framer-motion";
 

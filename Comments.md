@@ -11,6 +11,7 @@
 - Find a ready component for the message text input
 - Check the array typing problem when using the destruction operator "..." (e.g [Message, Message] is not assignable to type [Message])
 - Change the layout form for the users in the messages list to a Grid layout instead of Flex (note: the time's position is supposed to be consistent => far right)
+- Change the chat input from "text" to "text area"
 
 
 FUTURE FEATURES:

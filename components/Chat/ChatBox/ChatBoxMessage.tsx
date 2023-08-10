@@ -3,7 +3,7 @@
 import { Message } from "@/types"
 import Image from "next/image";
 
-export default function ChatMessageBox({contents, owner, userUrl} : Message) {
+export default function Message({contents, owner, userUrl} : Message) {
 
     const globalUserId = "Me"; //user id from global auth state
 
@@ -18,7 +18,8 @@ export default function ChatMessageBox({contents, owner, userUrl} : Message) {
                             ? 
                                 <Image src={userUrl} alt={owner} width={48} height={48} /> 
                             : 
-                                <div className="w-12 h-12 rounded-xl bg-gray-400" ></div>
+                                // placeholder to fill the image space
+                                <div className="w-12 h-12 rounded-xl bg-transparent" ></div>
                             }
                             
                             <p className={`m-0 px-4 py-4 w-fit h-full max-w-xs table-cell align-middle break-words whitespace-normal rounded-lg font-inter text-sm font-normal ${owner === globalUserId ? "bg-primary-purple text-white" : "bg-[#F1F1F1] text-black"}`} >{message.content}</p>
