@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="overflow-hidden overscroll-none m-0 font-inter flex">
+      <body className="w-screen h-screen overflow-hidden overscroll-none m-0 font-inter flex">
         <SideBar />
         {children}
       </body>

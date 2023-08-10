@@ -11,7 +11,7 @@ export default function MessageCard({
 }: MessageCardProps) {
   return (
     <motion.div
-      className="flex p-3 items-start gap-4 self-stretch hover:bg-[#615EF0]/[.06] rounded-xl"
+      className="flex p-3 items-start gap-4 cursor-pointer self-stretch hover:bg-[#615EF0]/[.06] rounded-xl"
       whileHover={{ scale: 1.02 }}
     >
       <Image

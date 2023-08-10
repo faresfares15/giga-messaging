@@ -28,7 +28,7 @@ const resetClicked = () => {
 }
 
   return (
-    <nav className="max-md:hidden flex flex-col items-center h-screen shadow-lg shadow-purple-100 pb-6 pt-4 pr-4 pl-4">
+    <nav className="hidden w-24 min-w-[6rem] md:flex md:flex-col md:items-center md:h-screen shadow-lg shadow-purple-100 pb-6 pt-4 px-4">
       {/*Links*/}
       <div className="flex flex-col items-center gap-12">
         <Link href="/">

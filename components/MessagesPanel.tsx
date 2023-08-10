@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 export default function MessagesPanel() {
     return (
         // outer container
-        <div className="w-[21.8125rem] flex flex-col items-center border-r-[0.0625rem]">
-            <div className="flex w-full p-6 items-center justify-between border-b-[0.0625rem]">
+        <div className="w-[21.8125rem] h-screen min-w-fit border-r-[0.0625rem]">
+            <div className="flex w-full h-[9%] p-6 items-center justify-between border-b-[0.0625rem]">
                 <div className="flex items-center gap-[0.625rem]">
                     <div className="flex items-center gap-[0.375rem]">
                         <p className="text-xl font-semibold">
@@ -36,7 +36,7 @@ export default function MessagesPanel() {
                 />
                 </motion.div>
             </div>
-            <div className="flex flex-col items-start self-stretch">
+            <div className="h-[91%] flex flex-col items-start self-stretch">
             {/*  Global List  */}
                 <SearchMessages />
                 <MessagesList />
