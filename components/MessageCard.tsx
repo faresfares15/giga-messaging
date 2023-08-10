@@ -1,18 +1,23 @@
 "use client";
+import useChat from "@/hooks/useChat";
 import { MessageCardProps } from "@/types";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export default function MessageCard({
+const MessageCard:React.FC<MessageCardProps> = ({
   profilePicUrl,
   username,
   lastMessage,
   lastMessageTime,
-}: MessageCardProps) {
+}) => {
+
+  const { loadInitialMessages } = useChat();
+
   return (
     <motion.div
       className="flex p-3 items-start gap-4 cursor-pointer self-stretch hover:bg-[#615EF0]/[.06] rounded-xl"
       whileHover={{ scale: 1.02 }}
+      onClick={() => loadInitialMessages(username)}
     >
       <Image
         className="rounded-xl"
@@ -33,3 +38,5 @@ export default function MessageCard({
     </motion.div>
   );
 }
+
+export default MessageCard;

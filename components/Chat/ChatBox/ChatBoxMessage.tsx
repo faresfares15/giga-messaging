@@ -1,11 +1,14 @@
 'use client'
 
+import useChat from "@/hooks/useChat";
 import { Message } from "@/types"
 import Image from "next/image";
 
-export default function Message({contents, owner, userUrl} : Message) {
+export default function Message({contents, owner} : Message) {
 
     const globalUserId = "Me"; //user id from global auth state
+
+    const {userInfo: {userUrl}} = useChat();
 
     return (
         <div className="w-full flex flex-col justify-between gap-4" >

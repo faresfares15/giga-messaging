@@ -4,7 +4,8 @@ import SearchMessages from "./Chat/SearchMessages";
 import MessagesList from "@/components/MessagesList";
 import { motion } from "framer-motion";
 
-export default function MessagesPanel() {
+const MessagesPanel:React.FC = () => {
+
     return (
         // outer container
         <div className="w-[21.8125rem] h-screen min-w-fit border-r-[0.0625rem]">
@@ -44,3 +45,5 @@ export default function MessagesPanel() {
         </div>
     );
 }
+
+export default MessagesPanel

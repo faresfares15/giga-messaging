@@ -1,14 +1,15 @@
 import Image from "next/image";
 import { Call } from 'iconsax-react'
 import React from "react";
+import useChat from "@/hooks/useChat";
 
 type Props = {
-    username: string;
-    userUrl: string;
     status: "online" | "offline"
 }
 
-const ChatBoxHeader:React.FC<Props> = ({username, userUrl, status}) => {
+const ChatBoxHeader:React.FC<Props> = ({status}) => {
+
+    const {userInfo: {username, userUrl}} = useChat();
 
     const statuses = {
         "online" : "bg-[#68D391]",

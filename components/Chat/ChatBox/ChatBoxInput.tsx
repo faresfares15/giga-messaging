@@ -1,14 +1,13 @@
 import React, { useRef, FormEvent } from 'react'
 import { AttachSquare, Send2 } from 'iconsax-react'
 import { Message } from '@/types';
+import useChat from '@/hooks/useChat';
 
-type Props = {
-    setChatMessages: React.Dispatch< React.SetStateAction<Message[]> >;
-}
-
-const ChatBoxInput:React.FC<Props> = ({setChatMessages}) => {
+const ChatBoxInput:React.FC = () => {
 
     const globalUserId = "Me";
+
+    const { setChatMessages } = useChat();
 
     const chatTextInput = useRef<HTMLInputElement>(null);
     const chatAttachmentsInput = useRef<HTMLInputElement>(null);
@@ -19,6 +18,8 @@ const ChatBoxInput:React.FC<Props> = ({setChatMessages}) => {
         if(chatTextInput.current === null) throw new Error("Page didn't load correctly: Text input is not loaded");
 
         const textMessage = chatTextInput.current.value;
+        if(!textMessage) return;
+        
         chatTextInput.current.value = "";
 
         setChatMessages(previousMessages => {

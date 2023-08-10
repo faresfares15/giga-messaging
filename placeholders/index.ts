@@ -2,7 +2,7 @@ import {MessageCardProps} from "@/types";
 
 export const messagesCardsPlaceholders: MessageCardProps[] = [
     {
-      username: "Elmer Laverty",
+        username: "Elmer Laverty",
         profilePicUrl: "/assets/placeholderIcons/ElmerLaverty.png",
         lastMessage: "Haha oh man 🔥",
         lastMessageTime: "12m"
@@ -38,7 +38,7 @@ export const messagesCardsPlaceholders: MessageCardProps[] = [
         lastMessageTime: "1m"
     },
     {
-      username: "Elmer Laverty",
+        username: "Elmer Laverty",
         profilePicUrl: "/assets/placeholderIcons/ElmerLaverty.png",
         lastMessage: "Haha oh man 🔥",
         lastMessageTime: "12m"
