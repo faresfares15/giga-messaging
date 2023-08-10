@@ -20,7 +20,7 @@ const ChatBoxHeader:React.FC<Props> = ({username, userUrl, status}) => {
     }
 
     return (
-        <div className="h-20 px-8 py-2 flex justify-between border-b" >
+        <div className="h-[8%] px-8 py-2 flex justify-between border-b" >
             <div className="w-fit grid grid-rows-2 grid-cols-[max-content_max-content] gap-x-4" >
                 <Image src={userUrl} alt="Florencio Dorrance" width={48} height={48} className="row-span-2 rounded-lg cursor-pointer" />
                 <p className="cursor-pointer font-semibold" >{username}</p>

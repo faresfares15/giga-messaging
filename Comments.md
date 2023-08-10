@@ -12,6 +12,8 @@
 - Check the array typing problem when using the destruction operator "..." (e.g [Message, Message] is not assignable to type [Message])
 - Change the layout form for the users in the messages list to a Grid layout instead of Flex (note: the time's position is supposed to be consistent => far right)
 - Change the chat input from "text" to "text area"
+- Move the "Send" button inside the text input, and add an emojis button
+- Apply gradients to messages boxes, instead of uni-color backgrounds
 
 
 FUTURE FEATURES:
@@ -19,3 +21,4 @@ FUTURE FEATURES:
 - Number of unseen messages as a notification (e.g "5 new messages")
 - Show sent times of messages
 - "${user} is typing..."
+- Side panel on the right side to show chat details and settings

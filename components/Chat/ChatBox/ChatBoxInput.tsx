@@ -48,13 +48,13 @@ const ChatBoxInput:React.FC<Props> = ({setChatMessages}) => {
     }
 
     return (
-        <form onSubmit={sendMessage} className="w-full h-20 p-8 flex justify-between items-center gap-4" >
+        <form onSubmit={sendMessage} className="w-full h-[9%] p-8 flex justify-between items-center gap-4" >
             <label htmlFor="attachments" className="cursor-pointer">
                 <AttachSquare className="w-8 h-8 text-black"/>
                 <input ref={chatAttachmentsInput} type="file" accept="image/png, image/jpeg" name="attachments" id="attachments" className="hidden" />
             </label>
             <input ref={chatTextInput} type="text" name="message" id="message" placeholder="Send a message..." className="w-full px-5 py-3 rounded-xl border-2 border-solid border-[#E2E8F0] bg-white"/>
-            <Send2 variant="Bold" className="w-8 h-8 text-primary-purple cursor-pointer"/>
+            <Send2 variant="Bold" className="w-8 h-8 text-primary-purple cursor-pointer" onClick={sendMessage}/>
         </form>
     )
 }
